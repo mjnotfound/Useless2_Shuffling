@@ -1,7 +1,7 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# Doom Scope 🎯
 
 
 ## Basic Details
@@ -9,57 +9,31 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: AFIN T SONY - AISAT
+- Member 2: MANJIMA V.A - AISAT
 
 ### Project Description
-[2-3 lines about what your project does]
-
+A fun project that predicts your random, humorous future by detecting your face. 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Boredom
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+By giving funny dump future predictions 
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-
-### Implementation
-For Software:
-# Installation
-[commands]
+- html, java script 
+- It follows a simple client-side structure where HTML forms the layout, and JavaScript handles the logic
+- Visual Studio Code
 
 ### RUN
-
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
+# Screenshots
+https://drive.google.com/drive/folders/1IHwaTT5z3lNkNPfvtESkYpr2eQpQS4Mo
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- AFIN T SONY: Handled the implementation of face detection, webcam integration, and the logic that triggers predictions upon face recognition. Also ensured smooth user interaction and real-time performance.
+- MANJIMA V.A:  Designed and curated a wide range of humorous future predictions to make the experience entertaining.
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DoomScope 3000 – Comedy Edition</title>
+  <style>
+    body {
+      background-color: #fef6e4;
+      color: #001858;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    video {
+      border: 3px dashed #f582ae;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      background-color: #ffb3c1;
+      color: #001858;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #f582ae;
+    }
+
+    #prediction {
+      margin-top: 40px;
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      color: #172c66;
+    }
+
+    ul {
+      list-style-type: "🤣 ";
+      text-align: left;
+      padding-left: 25%;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔮 DoomScope 3000</h1>
+  <p>We don’t predict your doom — we roast your future.</p>
+
+  <video id="webcam" width="320" height="240" autoplay playsinline></video><br>
+  <button onclick="revealDoom()">Reveal My Funny Future</button>
+
+  <div id="prediction"></div>
+
+  <script>
+    const video = document.getElementById("webcam");
+    const prediction = document.getElementById("prediction");
+
+    // Access webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        video.srcObject = stream;
+      })
+      .catch(err => {
+        prediction.innerHTML = "<p>⚠️ Camera access failed. Fate refuses to joke with you.</p>";
+        console.error(err);
+      });
+
+    const funnyDeaths = [
+      "You will trip on a Lego, fall into a fruit stand, and be declared a public banana hazard.",
+      "You’ll laugh so hard at a meme that you inhale a full samosa.",
+      "A parade of ducks will chase you into a pond — where you’ll stay and become their king.",
+      "You’ll slip on your own slipper, bounce off the wall, and land in history books as ‘That One Guy.’",
+      "You’ll be crushed by a giant inflatable Pikachu during a flash mob proposal that wasn’t for you."
+    ];
+
+    const funnyFinance = [
+      "You’ll invest all your savings into invisible socks — no one buys them because… they're invisible.",
+      "You’ll accidentally subscribe to 17 streaming platforms thinking one of them has 'Shrek 5'.",
+      "You’ll buy a golden spoon NFT and go bankrupt when it turns out to be a ladle.",
+      "You’ll spend ₹50,000 on a motivational course that just yells 'BE BETTER' for 3 hours.",
+      "You’ll attempt crypto mining using a toaster. It toasts well, but no coins."
+    ];
+
+    const funnyMarriage = [
+      "Your future spouse insists on being addressed as 'Captain Noodles' in public.",
+      "You’ll marry someone whose favorite hobby is staring contests with pigeons.",
+      "Your wedding will be interrupted by your spouse’s ex — a mime who won’t stop miming heartbreak.",
+      "You’ll fall in love with someone who thinks your real name is Kevin (it isn’t).",
+      "Your spouse will make you reenact romantic movie scenes — with sock puppets."
+    ];
+
+    function revealDoom() {
+      const death = funnyDeaths[Math.floor(Math.random() * funnyDeaths.length)];
+      const money = funnyFinance[Math.floor(Math.random() * funnyFinance.length)];
+      const love = funnyMarriage[Math.floor(Math.random() * funnyMarriage.length)];
+
+      prediction.innerHTML = `
+        <h2>😂 Your Funny Future:</h2>
+        <ul>
+          <li><strong>How You'll Die:</strong> ${death}</li>
+          <li><strong>Your Financial Blunder:</strong> ${money}</li>
+          <li><strong>Your Love Life:</strong> ${love}</li>
+        </ul>
+      `;
+    }
+  </script>
+
+</body>
+</html>
